@@ -2,7 +2,6 @@
 Adventure is a CLI game, which is a project of the OOP course of ZJU.
 
 > **Warning:** Please don't copy my code, or do it at your own risk!
->
 
 ## Compile & Run
 
@@ -14,9 +13,9 @@ $ ./ZJU-OOP-Adventure
 
 ## My Design
 
-​	There are 6 kinds of rooms in the castle:
+There are 6 kinds of rooms in the castle:
 
-|       Kind        | Quantity |
+|       Type        | Quantity |
 | :---------------: | :------: |
 |       Lobby       |    1     |
 | Princess's Prison |    1     |
@@ -25,15 +24,15 @@ $ ./ZJU-OOP-Adventure
 |    Radar Room     |    4     |
 |   Trigger Room    |    2     |
 
-​	Special rooms designed by me:
+Special rooms designed by me:
 
 - **Radar Room** can tell you the minimum number of steps to Lobby, Princess's Prison or Monster's Lair.
 
 - **Trigger Room** can randomly reset Exits of all rooms.
 
-​	The map of this game is a cube with 3 rooms on each side, and the total number of rooms is 27.
+The map of this game is a cube with 3 rooms on each side, and the total number of rooms is 27. There are 12-5=7 exits in each floors and 2 exits between each two floors.
 
-​	The room with monster or princess is randomly set. It's guaranteed that there exist at least one path to find Princess while avoiding Monster at any time, even if the Trigger Room has been activated.
+The room with monster or princess is randomly set. It's guaranteed that there exist at least one path to find Princess while avoiding Monster at any time, even if the Trigger Room has been activated.
 
 ## Appendix: Task Description
 
