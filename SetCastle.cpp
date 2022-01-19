@@ -86,7 +86,8 @@ int Castle::NextRandRoom(int Limit){
 
 int Castle::NextRandExit(int L,int Len,bool op){
 	/*
-		This function is used to return the ID of a location that no exit is in here randomly.
+		This function is used to randomly return the ID of a location
+		with or without (according to the op variable) an exit here.
 	*/
 	int Res=L+rand()%Len;
 	for(;Exit[Res]!=op;Res=L+rand()%Len){}
